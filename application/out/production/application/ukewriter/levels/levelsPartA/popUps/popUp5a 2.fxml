@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FBB14E;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ukewriter.levels.levelsPartA.LevelsPartA">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+            <children>
+                <Text fill="#f08d76" strokeType="OUTSIDE" strokeWidth="0.0" text="This one is a little bit different, as it is a much longer cycle of chords but it is well worth having giving it a go and seeing where the inspiration takes you! " wrappingWidth="480.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <font>
+                        <Font name="Courier Bold" size="13.0" />
+                    </font>
+                </Text>
+                <Text fill="#f08d76" layoutX="20.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have a go moving up or down in intervals of a fifth. Don’t feel as though you have to use the full cycle! Hey Joe by The Jimi Hendrix Experience (1966) uses the progression C (I), G (VI), D (II), A (VI), E (III) then back to C (I). You might notice that chords D, A and E would normally be minor chords in the key of C major. Have a listen to the song to hear the effect of this modal pattern." wrappingWidth="480.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0">
+                    <font>
+                        <Font name="Courier Bold" size="13.0" />
+                    </font>
+                </Text>
+                <AnchorPane prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #FBB14E;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <children>
+                        <Button fx:id="go" mnemonicParsing="false" onAction="#close" style="-fx-background-color: #F08D76;" text="Let's go!" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                            <font>
+                                <Font name="Courier Bold" size="16.0" />
+                            </font></Button>
+                    </children>
+                </AnchorPane>
+            <Text fill="#f08d76" layoutX="20.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have a listen to I Will Survive by Gloria Gaynor. The sequence is Am (i) - Dm (vi) - G (VII) - Cmaj7 (III) - Fmaj7 (VI) - Bm7b5 (ii) - E (V). If we take just the roots of the chords we have A, D, G, C, F, B, E and back to A. You might notice that the root of each chord is an interval of a fifth lower than the chord which precedes it, hence the name circle of fifths!" wrappingWidth="480.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="60.0">
+               <font>
+                  <Font name="Courier Bold" size="13.0" />
+               </font>
+            </Text>
+            </children></AnchorPane>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0">
+            <image>
+                <Image url="@../../../../resources/logo.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

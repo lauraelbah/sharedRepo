@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FBB14E;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ukewriter.UkeTuner">
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+        <AnchorPane prefHeight="50.0" prefWidth="90.0" style="-fx-background-color: #FBB14E;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <Button fx:id="go" mnemonicParsing="false" onAction="#close" style="-fx-background-color: #F08D76;" text="Done!" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                <font>
+                    <Font name="Courier Bold" size="16.0" />
+                </font>
+            </Button>
+        </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F08D76;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="1.55" scaleY="1.55" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="45.0">
+                     <image>
+                        <Image url="@../../../../resources/head.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="g" mnemonicParsing="false" onAction="#g" style="-fx-background-color: #F08D76;" text="G" textFill="WHITE" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="62.0">
+                      <font>
+                          <Font name="Courier Bold" size="13.0" />
+                      </font>
+                  </Button>
+                   <Button fx:id="c" mnemonicParsing="false" onAction="#c" style="-fx-background-color: #F08D76;" text="C" textFill="WHITE" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="84.0">
+                       <font>
+                           <Font name="Courier Bold" size="13.0" />
+                       </font>
+                   </Button>
+                   <Button fx:id="e" mnemonicParsing="false" onAction="#e" style="-fx-background-color: #F08D76;" text="E" textFill="WHITE" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="106.0">
+                       <font>
+                           <Font name="Courier Bold" size="13.0" />
+                       </font>
+                   </Button>
+                   <Button fx:id="a" mnemonicParsing="false" onAction="#a" style="-fx-background-color: #F08D76;" text="A" textFill="WHITE" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="127.0">
+                       <font>
+                           <Font name="Courier Bold" size="13.0" />
+                       </font>
+                   </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="playAll" mnemonicParsing="false" onAction="#playAll" style="-fx-background-color: #FBB14E;" text="Play All &#10;Strings" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="80.0" AnchorPane.rightAnchor="32.0">
+         <font>
+            <Font name="Courier Bold" size="17.0" />
+         </font>
+      </Button>
+        
+    </AnchorPane>
+    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="-43.0">
+        <Image url="@../../../../resources/logoWithoutName.png" />
+    </ImageView>
+</AnchorPane>

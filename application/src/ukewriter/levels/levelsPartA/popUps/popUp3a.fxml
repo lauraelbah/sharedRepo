@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FBB14E;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ukewriter.levels.levelsPartA.LevelsPartA">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+            <children>
+                <Text fill="#f08d76" strokeType="OUTSIDE" strokeWidth="0.0" text="There are lots of famous 4 chord progressions and his is one of them! The pattern is I - vi - IV - V. All I Have to Do Is Dream by the Everly Brothers (1958) uses E (I), C#m (vi), A (IV) and B7 (V7). For a more up tempo example, check out We Go Together by John Travolta and Olivia Newton-John (Grease) (1972) which uses Bb (I), Gm (vi), Eb (V), F (V). Not comfortable with sharp/flat chords just yet? Try transposing the song down 3 semitones to G - Em - C - D. You could even use a capo on the 3rd fret to bring it back up the its original key." wrappingWidth="480.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <font>
+                        <Font name="Courier Bold" size="15.0" />
+                    </font>
+                </Text>
+                <Text fill="#f08d76" layoutX="20.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You don’t have to start the sequence with chord I! In Viva La Vida by Coldplay (2008), the same chord sequence is used starting with chord IV: C (IV), D (V), G (I), Em (vi)." wrappingWidth="480.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0">
+                    <font>
+                        <Font name="Courier Bold" size="15.0" />
+                    </font>
+                </Text>
+                <AnchorPane prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #FBB14E;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <children>
+                        <Button fx:id="go" mnemonicParsing="false" onAction="#close" style="-fx-background-color: #F08D76;" text="Let's go!" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                            <font>
+                                <Font name="Courier Bold" size="16.0" />
+                            </font></Button>
+                    </children>
+                </AnchorPane>
+            </children></AnchorPane>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0">
+            <image>
+                <Image url="@../../../../resources/logo.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="662.0" prefWidth="1049.0" style="-fx-background-color: #006B77;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ukewriter.UkeTuner">
+    <Pane layoutX="112.0" layoutY="44.0" prefHeight="130.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <Pane layoutX="31.0" layoutY="273.0" prefHeight="130.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+    <Pane layoutX="537.0" layoutY="373.0" prefHeight="200.0" prefWidth="130.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <Pane layoutX="730.0" layoutY="131.0" prefHeight="200.0" prefWidth="130.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <AnchorPane layoutX="525.0" layoutY="276.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="80.0">
+        <AnchorPane layoutX="603.0" layoutY="166.0" prefHeight="120.0" prefWidth="150.0"
+                    style="-fx-background-color: #FBB14E;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="150.0"
+                    AnchorPane.rightAnchor="282.0" AnchorPane.topAnchor="30.0">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;"
+                        AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0"
+                        AnchorPane.topAnchor="25.0">
+                <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true"
+                           scaleX="2.5" scaleY="2.5" AnchorPane.leftAnchor="148.0" AnchorPane.topAnchor="121.0">
+                    <Image url="@../resources/head.png"/>
+                </ImageView>
+                <Button fx:id="g" mnemonicParsing="false" onAction="#g" style="-fx-background-color: #F08D76;"
+                        text="G" textFill="WHITE" AnchorPane.bottomAnchor="115.0" AnchorPane.leftAnchor="140.0">
+                    <font>
+                        <Font name="Courier Bold" size="16.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="c" layoutX="120.0" layoutY="252.0" mnemonicParsing="false" onAction="#c"
+                        style="-fx-background-color: #F08D76;" text="C" textFill="WHITE"
+                        AnchorPane.bottomAnchor="115.0" AnchorPane.leftAnchor="175.0">
+                    <font>
+                        <Font name="Courier Bold" size="16.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="e" layoutX="156.0" layoutY="252.0" mnemonicParsing="false" onAction="#e"
+                        style="-fx-background-color: #F08D76;" text="E" textFill="WHITE"
+                        AnchorPane.bottomAnchor="115.0" AnchorPane.leftAnchor="210.0">
+                    <font>
+                        <Font name="Courier Bold" size="16.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="a" layoutX="190.0" layoutY="252.0" mnemonicParsing="false" onAction="#a"
+                        style="-fx-background-color: #F08D76;" text="A" textFill="WHITE"
+                        AnchorPane.bottomAnchor="115.0" AnchorPane.leftAnchor="245.0">
+                    <font>
+                        <Font name="Courier Bold" size="16.0"/>
+                    </font>
+                </Button>
+            </AnchorPane>
+        </AnchorPane>
+        <AnchorPane prefHeight="105.0" prefWidth="105.0" style="-fx-background-color: #006B77;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+            <Button fx:id="back" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #FBC5B8;" text="←" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                <font>
+                    <Font name="Courier" size="39.0" />
+                </font>
+            </Button>
+        </AnchorPane>
+      <Button fx:id="playAll" mnemonicParsing="false" onAction="#playAll" style="-fx-background-color: #FBB14E;" text="play all&#10;strings" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="80.0" AnchorPane.rightAnchor="80.0">
+         <font>
+            <Font name="Courier Bold" size="19.0" />
+         </font>
+      </Button>
+
+    </AnchorPane>
+    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ukulele Tuner!" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="266.5166015625" AnchorPane.topAnchor="15.0">
+        <font>
+            <Font name="Courier Bold" size="61.0" />
+        </font>
+    </Text>
+</AnchorPane>

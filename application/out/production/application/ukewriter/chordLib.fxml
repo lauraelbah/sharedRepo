@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="662.0" prefWidth="1049.0" style="-fx-background-color: #006B77;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ukewriter.ChordLib">
+    <Pane layoutX="112.0" layoutY="44.0" prefHeight="130.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <Pane layoutX="31.0" layoutY="273.0" prefHeight="130.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+    <Pane layoutX="537.0" layoutY="373.0" prefHeight="200.0" prefWidth="130.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <Pane layoutX="730.0" layoutY="131.0" prefHeight="200.0" prefWidth="130.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <AnchorPane layoutX="525.0" layoutY="276.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="80.0">
+        <ImageView fitHeight="182.0" fitWidth="368.0" layoutX="30.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+            <Image url="@../resources/logoWithoutName.png" />
+        </ImageView>
+        <AnchorPane prefHeight="120.0" prefWidth="267.0" style="-fx-background-color: #006B77;"
+                    AnchorPane.bottomAnchor="226.0" AnchorPane.rightAnchor="81.0">
+            <ChoiceBox fx:id="rootChoice" prefWidth="150.0" style="-fx-background-color: #FBC5B8;"
+                       stylesheets="@choicebox.css" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="25.0">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="C"/>
+                        <String fx:value="C#/Db"/>
+                        <String fx:value="D"/>
+                        <String fx:value="D#/Eb"/>
+                        <String fx:value="E"/>
+                        <String fx:value="F"/>
+                        <String fx:value="F#/Gb"/>
+                        <String fx:value="G"/>
+                        <String fx:value="G#/Ab"/>
+                        <String fx:value="A"/>
+                        <String fx:value="A#/Bb"/>
+                        <String fx:value="B"/>
+                    </FXCollections>
+                </items>
+            </ChoiceBox>
+            <ChoiceBox fx:id="typeChoice" prefWidth="150.0" style="-fx-background-color: #FBC5B8;"
+                       stylesheets="@choicebox.css" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="70.0">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="major"/>
+                        <String fx:value="minor"/>
+                        <String fx:value="diminished"/>
+                    </FXCollections>
+                </items>
+            </ChoiceBox>
+            <Button fx:id="go" minHeight="36.0" mnemonicParsing="false" onAction="#loadChord"
+                    style="-fx-background-color: #F08D76;" text="Go!" textAlignment="CENTER" textFill="WHITE"
+                    AnchorPane.bottomAnchor="41.0" AnchorPane.rightAnchor="20.0">
+                <font>
+                    <Font name="Courier Bold" size="15.0"/>
+                </font>
+            </Button>
+        </AnchorPane>
+        <AnchorPane layoutX="603.0" layoutY="166.0" prefHeight="120.0" prefWidth="150.0"
+                    style="-fx-background-color: #006B77;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="150.0"
+                    AnchorPane.rightAnchor="450.0" AnchorPane.topAnchor="50.0">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;"
+                        AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0"
+                        AnchorPane.topAnchor="40.0">
+                <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true"
+                           scaleX="2.0" scaleY="2.0" AnchorPane.leftAnchor="64.0" AnchorPane.topAnchor="86.0">
+                    <Image url="@../resources/chordDiagrams/Cmajor.png"/>
+                </ImageView>
+            </AnchorPane>
+        </AnchorPane>
+      <Button mnemonicParsing="false" onAction="#play" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #006B77;" AnchorPane.leftAnchor="461.0" AnchorPane.topAnchor="50.0">
+          <graphic>
+              <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <viewport>
+                      <Rectangle2D />
+                  </viewport>
+                  <Image url="@../resources/loop.png" />
+              </ImageView>
+          </graphic>
+          <padding>
+              <Insets bottom="1.0" left="4.0" right="1.0" top="1.0" />
+          </padding>
+      </Button>
+        <AnchorPane prefHeight="105.0" prefWidth="105.0" style="-fx-background-color: #006B77;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+            <Button fx:id="back" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #FBC5B8;" text="←" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                <font>
+                    <Font name="Courier" size="39.0" />
+                </font>
+            </Button>
+        </AnchorPane>
+
+    </AnchorPane>
+    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Chord Library!" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="266.5166015625" AnchorPane.topAnchor="15.0">
+        <font>
+            <Font name="Courier Bold" size="61.0" />
+        </font>
+    </Text>
+</AnchorPane>

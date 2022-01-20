@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="662.0" prefWidth="1049.0" style="-fx-background-color: #006B77;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ukewriter.welcome">
+   <Pane layoutX="112.0" layoutY="44.0" prefHeight="130.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   <Pane layoutX="31.0" layoutY="273.0" prefHeight="130.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   <Pane layoutX="537.0" layoutY="373.0" prefHeight="200.0" prefWidth="130.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   <Pane layoutX="730.0" layoutY="131.0" prefHeight="200.0" prefWidth="130.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   <AnchorPane layoutX="525.0" layoutY="276.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="80.0">
+      <AnchorPane layoutX="315.0" layoutY="101.0" prefHeight="200.0" prefWidth="489.0" style="-fx-background-color: #FBC5B8;" AnchorPane.bottomAnchor="237.0" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="150.0">
+         <Button fx:id="startBtn" layoutX="261.0" layoutY="87.0" mnemonicParsing="false" onAction="#startApp" style="-fx-background-color: #006B77;" text="START" textFill="WHITE" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <font>
+               <Font name="Courier Bold" size="29.0" />
+            </font>
+         </Button>
+      </AnchorPane>
+      <ImageView pickOnBounds="true" preserveRatio="true" rotate="-90.0" scaleX="0.7" scaleY="0.7" translateX="-170.0" translateY="-100.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="200.0">
+         <Image url="@../resources/logoWithoutName.png" />
+      </ImageView>
+      <ImageView pickOnBounds="true" preserveRatio="true" rotate="-90.0" scaleX="0.7" scaleY="0.7" translateX="170.0" translateY="-100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="200.0">
+         <image>
+            <Image url="@../resources/logoWithoutName.png" />
+         </image>
+      </ImageView>
+   </AnchorPane>
+   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to UkeWriter!" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.27490234375" AnchorPane.topAnchor="15.0">
+      <font>
+         <Font name="Courier Bold" size="61.0" />
+      </font>
+   </Text>
+</AnchorPane>

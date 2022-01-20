@@ -1,0 +1,29 @@
+.myDialog{
+    -fx-background-color: #FBC5B8;
+    -fx-font-family: "monospace";
+}
+.myDialog > *.button-bar > *.container{
+    -fx-background-color: #FBC5B8;
+    -fx-font-family: "monospace";
+}
+.myDialog .button{
+    -fx-background-color: #006B77;
+    -fx-font-family: "monospace";
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.myDialog > *.label.content{
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-font-family: "monospace";
+}
+.myDialog .header-panel{
+    -fx-background-color: #FBC5B8;
+    -fx-font-family: "monospace";
+}
+.myDialog .header-panel *.label{
+    -fx-font-family: "monospace";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}

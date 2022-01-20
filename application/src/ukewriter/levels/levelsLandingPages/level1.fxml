@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane prefHeight="662.0" prefWidth="1049.0" style="-fx-background-color: #006B77;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ukewriter.levels.levelsLandingPages.LevelsLandingPage">
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;"
+               AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0"
+               AnchorPane.topAnchor="50.0">
+      <AnchorPane prefHeight="105.0" prefWidth="105.0" style="-fx-background-color: #006B77;"
+                  AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <Button fx:id="forward1" mnemonicParsing="false" onAction="#forward"
+                 style="-fx-background-color: #FBC5B8;" text="→" textFill="WHITE" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+            <font>
+               <Font name="Courier Bold" size="39.0"/>
+            </font>
+         </Button>
+      </AnchorPane>
+      <AnchorPane prefHeight="105.0" prefWidth="105.0" style="-fx-background-color: #006B77;"
+                  AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <Button fx:id="back" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #FBC5B8;"
+                 text="←" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                 AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <font>
+               <Font name="Courier" size="39.0"/>
+            </font>
+         </Button>
+      </AnchorPane>
+      <AnchorPane prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #006B77;"
+                  AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="0.0">
+         <AnchorPane style="-fx-background-color: #FBC5B8;" AnchorPane.bottomAnchor="20.0"
+                     AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+                  text="Writing a Song with Only Two Chords" textAlignment="CENTER" wrappingWidth="430.0"
+                  AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Courier Bold" size="34.0"/>
+               </font>
+            </Text>
+         </AnchorPane>
+      </AnchorPane>
+      <AnchorPane prefHeight="105.0" prefWidth="105.0" style="-fx-background-color: #006B77;"
+                  AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <AnchorPane style="-fx-background-color: #FBC5B8;" AnchorPane.bottomAnchor="20.0"
+                     AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1" AnchorPane.leftAnchor="20.0"
+                  AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Courier Bold" size="75.0"/>
+               </font>
+            </Text>
+         </AnchorPane>
+      </AnchorPane>
+      <Text fill="#006b77" strokeType="OUTSIDE" strokeWidth="0.0"
+            text="Billy Ray Cyrus - Achy Breaky Heart (1992) uses just chords I and V!" AnchorPane.leftAnchor="15.0"
+            AnchorPane.topAnchor="130.0">
+         <font>
+            <Font name="Courier" size="22.0"/>
+         </font>
+      </Text>
+      <WebView fx:id="vid1" minHeight="360.0" minWidth="640.0" prefHeight="-1.0" prefWidth="-1.0"
+               AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="162.0"/>
+      <Text fill="#006b77" layoutX="25.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            text="Need more inspo? Check out Billie Eilish - Therefore I Am (2020)" AnchorPane.bottomAnchor="10.0"
+            AnchorPane.leftAnchor="120.0">
+         <font>
+            <Font name="Courier" size="18.5"/>
+         </font>
+      </Text>
+   </AnchorPane>
+   <ImageView fitHeight="225.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="25.0"
+              AnchorPane.topAnchor="24.0">
+      <Image url="@../../../resources/logo.png"/>
+   </ImageView>
+</AnchorPane>

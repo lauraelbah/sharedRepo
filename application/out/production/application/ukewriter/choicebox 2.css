@@ -1,0 +1,13 @@
+.choice-box .menu-item .label {
+    -fx-text-fill: #006B77;
+    -fx-font-family: "monospace";
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.choice-box {
+    -fx-text-fill: #006B77;
+    -fx-font-family: "monospace";
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FBB14E;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ukewriter.levels.levelsPartA.LevelsPartA">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+            <children>
+                <Text fill="#f08d76" strokeType="OUTSIDE" strokeWidth="0.0" text="Songwriters have tried and tested this sequence: I - V - vi - IV, or i - VI - III - VII in a minor key. You will have heard it many times before - check out Axis of Awesome’s 4 Chords video on YouTube to hear a compilation of examples! A major key example is Any Way You Want It by Journey (1980) which uses G (I), D(V), Em (vi) and C (IV). A minor example is Wake Me Up by Avicii (2013) which uses Bm (i), G (VI), D (III) and A (VII)." wrappingWidth="480.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <font>
+                        <Font name="Courier Bold" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="#f08d76" layoutX="20.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A cool thing about this sequence is that in a major key, it comprises of the same 4 chords as the relative minor. For example, in C major the sequence is C (I), G (V), Am (vi), F (IV) and in the relative minor, A minor, the sequence is Am (i), F (VI), C (III), G (VII). Have a listen to Mirrors by Justin Timberlake (2013) which uses this to create modal ambiguity and transition between major and minor from chorus to verse." wrappingWidth="480.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0">
+                    <font>
+                        <Font name="Courier Bold" size="14.0" />
+                    </font>
+                </Text>
+                <AnchorPane prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #FBB14E;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <children>
+                        <Button fx:id="go" mnemonicParsing="false" onAction="#close" style="-fx-background-color: #F08D76;" text="Let's go!" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                            <font>
+                                <Font name="Courier Bold" size="16.0" />
+                            </font></Button>
+                    </children>
+                </AnchorPane>
+            </children></AnchorPane>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0">
+            <image>
+                <Image url="@../../../../resources/logo.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

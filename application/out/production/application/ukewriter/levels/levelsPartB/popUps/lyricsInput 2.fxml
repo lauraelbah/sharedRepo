@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="90.0" prefWidth="600.0" style="-fx-background-color: #FBB14E;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ukewriter.levels.levelsPartB.LevelsPartB">
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+        <AnchorPane prefHeight="50.0" prefWidth="68.0" style="-fx-background-color: #FBB14E;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <Button fx:id="doneLyrics" mnemonicParsing="false" onAction="#updateLyrics" style="-fx-background-color: #F08D76;" text="Done" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                <font>
+                    <Font name="Courier Bold" size="16.0" />
+                </font>
+            </Button>
+        </AnchorPane>
+      <TextField fx:id="lyricTextField" prefWidth="472.0" promptText="Type lyrics here..." AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Courier Bold" size="16.0" />
+         </font>
+      </TextField>
+    </AnchorPane>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FBB14E;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ukewriter.levels.levelsPartB.LevelsPartB">
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+        <Text fill="#f08d76" strokeType="OUTSIDE" strokeWidth="0.0" text="CONGRATULATIONS!" wrappingWidth="480.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="80.0">
+            <font>
+                <Font name="Courier Bold" size="49.0" />
+            </font>
+        </Text>
+        <Text fill="#f08d76" layoutX="20.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You've written a song! &#10;&#10;Whether it's a few bars or a few minutes long, that's a pretty big deal!" textAlignment="CENTER" wrappingWidth="480.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="10.0">
+            <font>
+                <Font name="Courier Bold" size="19.0" />
+            </font>
+        </Text>
+        <AnchorPane prefHeight="50.0" prefWidth="114.0" style="-fx-background-color: #FBB14E;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <Button fx:id="go" mnemonicParsing="false" onAction="#close" style="-fx-background-color: #F08D76;" text="Awesome!!" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                <font>
+                    <Font name="Courier Bold" size="16.0" />
+                </font>
+            </Button>
+        </AnchorPane>
+    </AnchorPane>
+    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0">
+        <Image url="@../../../../resources/logo.png" />
+    </ImageView>
+</AnchorPane>

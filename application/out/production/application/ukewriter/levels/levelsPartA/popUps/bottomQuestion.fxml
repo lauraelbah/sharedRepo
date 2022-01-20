@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FBB14E;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ukewriter.levels.levelsPartA.LevelsPartA">
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+        <Text fill="#f08d76" strokeType="OUTSIDE" strokeWidth="0.0" text="The notes in yellow along the bottom represent the notes in your chosen key. Click one then select a Change Chord button to update that chord.&#10;The play button will play your sequence aloud.&#10;The star button(s) are randomisers (not available in all levels).&#10;To change the key centre, select it in the pink dropdown menu and click the I button.&#10;The major/minor button will change your key from major to minor or vice versa.&#10;&#10;Chords not sounding quite right when you play along? Click the Tuner button and check your ukulele is in tune! " wrappingWidth="480.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="5.0">
+            <font>
+                <Font name="Courier Bold" size="16.0" />
+            </font>
+        </Text>
+        <AnchorPane prefHeight="50.0" prefWidth="90.0" style="-fx-background-color: #FBB14E;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <Button fx:id="go" mnemonicParsing="false" onAction="#close" style="-fx-background-color: #F08D76;" text="Okay!" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                <font>
+                    <Font name="Courier Bold" size="16.0" />
+                </font>
+            </Button>
+        </AnchorPane>
+    </AnchorPane>
+    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0">
+        <Image url="@../../../../resources/logo.png" />
+    </ImageView>
+</AnchorPane>
